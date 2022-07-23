@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="https://play-lh.googleusercontent.com/9rycf89uVflWQHRgAZm4P8GvT5Kpzzsoo77EWjDew0DiMhz3YmZhis5mgiWWWov5lUOr">
+    <title>Mine Sweeper</title>
+
+</head>
+
+<body onload="initGame()">
+    <main class="background">
+        <header>
+            <div class="overlay">
+                <h1>Mine Sweeper</h1>
+            </div>
+        </header>
+        <div class="controls">
+
+            <button class="button level-button" onclick="gameLevel(this)">Beginner</button>
+            <button class="button level-button" onclick="gameLevel(this)">Advanced</button>
+            <button class="button level-button" onclick="gameLevel(this)">Expert</button>
+            <div>
+                <span class="red-flag-count-down">099</span>
+                <span><button class="smiley" onclick="initGame()"></button></span>
+                <span class="timer">000</span>
+            </div>
+
+            <div class="finish-modal">
+                game over!!</div>
+            <!-- <div  class="timer">000</div> -->
+            <div class="game-board">
+            </div>
+            <div class="lives"></div>
+    </main>
+    <footer>Alon Avisar</footer>
+
+
+    <script src="js/util.js"></script>
+    <script src="js/board.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
